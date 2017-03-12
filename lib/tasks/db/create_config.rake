@@ -1,8 +1,9 @@
 namespace :db do
   desc 'Create a database config with the given username and password'
-  task :create_config, [:host, :username, :password] do |t, args|
-    puts "Creating database config in config/database.yml"
-    File.open('config/database.yml', 'w') do |f|
+  task :create_config, [:host, :username, :password, :path] do |t, args|
+    path = args[:path] || 'config/database.yml'
+    puts "Creating database config in #{path}"
+    File.open(path, 'w') do |f|
       f.puts '---'
       f.puts "host: #{args[:host]}"
       f.puts "username: #{args[:username]}"
