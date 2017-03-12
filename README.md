@@ -6,7 +6,6 @@ This project containts an example application to be deployed with Capistrano
 Please run
 
 ```
-bundle exec rake db:create_config
+bundle exec rake db:create_config[host,username,password]
 ```
-
 to create a database.yml file.
