@@ -1,0 +1,44 @@
+<h1>That was easy</h1>
+<div class="feature">
+  <span class="desc">Capistrano is</span>
+  <ul class='list'>
+    <li>based on rake</li>
+    <li>a remote server automation and deployment tool written in Ruby</li>
+  </ul>
+</div>
+
+<div class="feature">
+  <span class="desc">Integrate Capistrano</span>
+  <ul>
+    <li>by adding <code>gem 'capistrano'</code> to your Gemfile</li>
+    <li>and running <code>cap install</code></li>
+  </ul>
+</div>
+
+<div class="feature">
+  <span class="desc">Configure capistrano</span>
+  <ul>
+    <li>via <code>config/deploy.rb</code></li>
+    <li>and <code>config/deploy/&lt;environment&gt;.rb</code></li>
+    <li>use <code>set</code> and <code>fetch</code> to setup / read global variables</li>
+    <li><code>server</code> and <code>role</code> based syntax to define hosts</li>
+  <ul>
+</div>
+
+<div class="feature">
+  <span class="desc">Capistranos structure</span>
+  <pre>
+/home/captalk/app
+  |
+  ├── current -> /home/captalk/app/releases/20170120114500/
+  ├── releases
+  │   ├── 20170110104000
+  │   └── 20170120114500
+  ├── repo
+  │   └── VCS related data
+  ├── revisions.log
+  └── shared
+      └── linked_files and linked_dirs
+</pre>
+</div>
+

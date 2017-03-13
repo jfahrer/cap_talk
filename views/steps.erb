@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,9 +36,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <% 1.upto(5) do |i| %>
-              <li class="<%= step == i.to_s ? 'active' : '' %>"><a href="/steps/<%= i %>">Step <%= i %></a></li>
-            <% end %>
+            <li class="<%= step == 'deployed' ? 'active' : '' %>"><a href="/steps/deployed">Deployed</a></li>
+            <li class="<%= step == 'extended' ? 'active' : '' %>"><a href="/steps/extended">Extended</a></li>
+            <li class="<%= step == 'advanced' ? 'active' : '' %>"><a href="/steps/advanced">Advanced</a></li>
+            <li class="<%= step == 'finished' ? 'active' : '' %>"><a href="/steps/finished">Finished</a></li>
           </ul>
         </div>
       </div>
@@ -45,8 +48,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Cap Talk Example App</h1>
-
           <%= erb :"steps/#{step}", locals: { params: params } %>
         </div>
       </div>
@@ -54,7 +55,10 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted"></p>
+        <i class="fa fa-envelope" aria-hidden="true"></i> julian@fahrer.net
+        <i class="fa fa-twitter" aria-hidden="true"></i> @jufahr
+        <i class="fa fa-github" aria-hidden="true"></i> https://github.com/jfahrer
       </div>
     </footer>
 

@@ -5,7 +5,7 @@ class CapTalk < Sinatra::Base
   set :raise_errors, true
 
   get '/' do
-    redirect to('/steps/1')
+    redirect to('/steps/deployed')
   end
 
   get '/steps/:step' do
