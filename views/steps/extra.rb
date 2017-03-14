@@ -1,6 +1,13 @@
 <h1>talk:advanced</h1>
 <div class="feature">
-  <span class="desc">Capstrano is more than just deployment</span>
+  <span class="desc">Capistrano is more than just deployment</span>
+  <div>
+    Use it where it makes sense
+  </div>
+</div>
+
+<div class="feature">
+  <span class="desc">Capistrano is not intended to setup your servers</span>
   <div>
     Use it where it makes sense
   </div>
@@ -10,16 +17,9 @@
   <span class="desc">Capistrano runs locally</span>
   <div>
     <ul>
-      <li>and has "no" dependcies on the remote side</li>
+      <li>and has "no" dependencies on the remote side</li>
       <li>and keeps the deploy cantained in the <code>deploy_to</code> directory</li>
     </ul>
-  </div>
-</div>
-
-<div class="feature">
-  <span class="desc">Capstrano is not intended to setup your servers</span>
-  <div>
-    Use it where it makes sense
   </div>
 </div>
 
