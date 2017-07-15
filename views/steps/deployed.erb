@@ -1,0 +1,13 @@
+<h1>talk:deployed</h1>
+<div class="feature">
+  The app has been deployed to <code><%= Dir.pwd %></code> on <code><%= `hostname` %></code>
+</div>
+
+<div class="feature">
+  <span class="desc">Current directory structure</span>
+  <pre>
+    <%= `tree /home/captalk/app -L 2` %>
+  </pre>
+</div>
+
+<%# <% execute_buggy_code %1> %>

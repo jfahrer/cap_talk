@@ -1,11 +1,19 @@
 # CapTalk
-This project containts an example application to be deployed with Capistrano
+This project contains an example application to be deployed with Capistrano.
 
-## Important notes
+Please be aware that this project is setup to run in a very specific and contained environment. It only purpose is to demonstrate the capabilities of Capistrano.
 
-Please run
+The slides for the talk can be found [https://docs.google.com/a/fahrer.net/presentation/d/1PqjqJ1Mrq_4BRB-0x8ImzSfgK4WUCdBk1Sdpsd0e9iI/edit?usp=sharing](here).
 
+## Getting started
+To start or restart the app please run
 ```
-bundle exec rake db:create_config[host,username,password]
+bundle install
+bundle exec rake run_service
 ```
-to create a database.yml file.
+
+To run the app in development mode you can execute
+```
+bundle install
+bundle exec rackup
+```
